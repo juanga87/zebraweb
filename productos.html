@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | ZEBRA DISTRIBUIDORA</title>
+
+    <meta name="description"
+        content="Encontrá productos de bazar, hogar, tecnología, limpieza, herramientas y electrodomésticos en ZEBRA DISTRIBUIDORA.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-main">ZEBRA</span>
+                <span class="logo-sub">DISTRIBUIDORA</span>
+            </a>
+
+            <nav class="nav">
+
+                <a href="index.html" class="nav-link">
+                    Inicio
+                </a>
+
+                <a href="productos.html" class="nav-link active">
+                    Productos
+                </a>
+
+                <a href="productos.html?categoria=electrodomesticos" class="nav-link">
+                    Categorías
+                </a>
+
+                <a href="index.html#nosotros" class="nav-link">
+                    Nosotros
+                </a>
+
+                <a href="index.html#contacto" class="nav-link">
+                    Contacto
+                </a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <!-- Búsqueda -->
+
+                <button class="search-button" type="button" aria-label="Buscar productos">
+                    <span>⌕</span>
+                </button>
+
+                <!-- WhatsApp -->
+
+                <a href="https://wa.me/5493455008512"
+                    class="header-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    WhatsApp
+
+                </a>
+
+                <!-- Carrito -->
+
+                <a href="carrito.html" class="cart-button">
+
+                    <span class="cart-icon">🛒</span>
+
+                    <span class="cart-text">
+                        Carrito
+                    </span>
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </a>
+
+                <!-- Menú móvil -->
+
+                <button class="menu-toggle" type="button" aria-label="Abrir menú">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+
+    <main>
+
+        <!-- =========================
+             ENCABEZADO DE PRODUCTOS
+        ========================== -->
+
+        <section class="products-header">
+
+            <div class="container">
+
+                <div class="products-header-content">
+
+                    <div>
+
+                        <span class="section-tag">
+                            TIENDA ONLINE
+                        </span>
+
+                        <h1>
+                            Nuestros productos
+                        </h1>
+
+                        <p>
+                            Explorá nuestra variedad de productos y encontrá
+                            todo lo que necesitás para tu negocio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TIENDA
+        ========================== -->
+
+        <section class="products-store">
+
+            <div class="container">
+
+                <!-- Barra superior -->
+
+                <div class="products-toolbar">
+
+                    <!-- Buscador -->
+
+                    <div class="products-search">
+
+                        <span class="search-icon">
+                            ⌕
+                        </span>
+
+                        <input
+                            type="search"
+                            id="product-search"
+                            placeholder="Buscar productos..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+                    <!-- Ordenamiento -->
+
+                    <div class="products-sort">
+
+                        <label for="sort-products">
+                            Ordenar por
+                        </label>
+
+                        <select id="sort-products">
+
+                            <option value="default">
+                                Relevancia
+                            </option>
+
+                            <option value="price-low">
+                                Precio: menor a mayor
+                            </option>
+
+                            <option value="price-high">
+                                Precio: mayor a menor
+                            </option>
+
+                            <option value="name">
+                                Nombre A-Z
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Filtros móvil -->
+
+                    <button
+                        class="filter-mobile-button"
+                        type="button">
+
+                        ☰
+                        Filtros
+
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     CUERPO DE LA TIENDA
+                ========================== -->
+
+                <div class="products-layout">
+
+
+                    <!-- =========================
+                         SIDEBAR DE FILTROS
+                    ========================== -->
+
+                    <aside class="products-sidebar">
+
+                        <div class="sidebar-header">
+
+                            <h2>
+                                Categorías
+                            </h2>
+
+                            <button
+                                class="sidebar-close"
+                                type="button"
+                                aria-label="Cerrar filtros">
+
+                                ×
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="sidebar-content">
+
+                            <div class="category-filter">
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="radio"
+                                        name="category"
+                                        value="todos"
+                                        checked
+                                    >
+
+                                    <span>
+                                        Todos los productos
+                                    </span>
+
+                                </label>
+
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="radio"
+                                        name="category"
+                                        value="electrodomesticos"
+                                    >
+
+                                    <span>
+                                        Electrodomésticos
+                                    </span>
+
+                                </label>
+
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="radio"
+                                        name="category"
+                                        value="hogar"
+                                    >
+
+                                    <span>
+                                        Hogar y cocina
+                                    </span>
+
+                                </label>
+
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="radio"
+                                        name="category"
+                                        value="tecnologia"
+                                    >
+
+                                    <span>
+                                        Tecnología
+                                    </span>
+
+                                </label>
+
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="radio"
+                                        name="category"
+                                        value="limpieza"
+                                    >
+
+                                    <span>
+                                        Limpieza
+                                    </span>
+
+                                </label>
+
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="radio"
+                                        name="category"
+                                        value="bazar"
+                                    >
+
+                                    <span>
+                                        Bazar
+                                    </span>
+
+                                </label>
+
+
+                                <label class="filter-option">
+
+                                    <input
+                                        type="radio"
+                                        name="category"
+                                        value="herramientas"
+                                    >
+
+                                    <span>
+                                        Herramientas
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- Separador -->
+
+                            <div class="filter-divider"></div>
+
+
+                            <!-- Disponibilidad -->
+
+                            <div class="filter-group">
+
+                                <h3>
+                                    Disponibilidad
+                                </h3>
+
+                                <label class="filter-checkbox">
+
+                                    <input
+                                        type="checkbox"
+                                        id="available-filter"
+                                    >
+
+                                    <span>
+                                        Solo productos disponibles
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- Limpiar filtros -->
+
+                            <button
+                                class="clear-filters"
+                                type="button">
+
+                                Limpiar filtros
+
+                            </button>
+
+                        </div>
+
+                    </aside>
+
+
+                    <!-- =========================
+                         PRODUCTOS
+                    ========================== -->
+
+                    <div class="products-content">
+
+
+                        <!-- Resultado -->
+
+                        <div class="products-results-header">
+
+                            <p>
+                                Mostrando
+                                <strong id="products-count">
+                                    8
+                                </strong>
+                                productos
+                            </p>
+
+                        </div>
+
+
+                        <!-- =========================
+                             GRID
+                        ========================== -->
+
+                        <div class="products-grid">
+
+
+                            <!-- PRODUCTO 1 -->
+
+                            <article
+                                class="product-card"
+                                data-category="electrodomesticos"
+                                data-price="45000"
+                                data-name="Licuadora de vaso">
+
+                                <a
+                                    href="producto.html?id=licuadora"
+                                    class="product-image">
+
+                                    <div class="image-placeholder">
+                                        IMAGEN
+                                    </div>
+
+                                    <span class="product-badge">
+                                        DESTACADO
+                                    </span>
+
+                                </a>
+
+
+                                <div class="product-info">
+
+                                    <span class="product-category">
+                                        Electrodomésticos
+                                    </span>
+
+                                    <h3 class="product-name">
+
+                                        <a href="producto.html?id=licuadora">
+                                            Licuadora de vaso
+                                        </a>
+
+                                    </h3>
+
+                                    <p class="product-description">
+                                        Licuadora práctica para uso diario,
+                                        ideal para hogares y comercios.
+                                    </p>
+
+
+                                    <div class="product-bottom">
+
+                                        <div>
+
+                                            <span class="product-price">
+                                                $45.000
+                                            </span>
+
+                                            <span class="product-min">
+                                                Mínimo: 1 unidad
+                                            </span>
+
+                                        </div>
+
+                                        <button
+                                            class="add-cart-button"
+                                            type="button"
+                                            data-product="licuadora">
+
+                                            +
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- PRODUCTO 2 -->
+
+                            <article
+                                class="product-card"
+                                data-category="tecnologia"
+                                data-price="18000"
+                                data-name="Auriculares Bluetooth">
+
+                                <a
+                                    href="producto.html?id=auriculares"
+                                    class="product-image">
+
+                                    <div class="image-placeholder">
+                                        IMAGEN
+                                    </div>
+
+                                </a>
+
+
+                                <div class="product-info">
+
+                                    <span class="product-category">
+                                        Tecnología
+                                    </span>
+
+                                    <h3 class="product-name">
+
+                                        <a href="producto.html?id=auriculares">
+                                            Auriculares Bluetooth
+                                        </a>
+
+                                    </h3>
+
+                                    <p class="product-description">
+                                        Auriculares inalámbricos con conexión
+                                        Bluetooth y diseño compacto.
+                                    </p>
+
+
+                                    <div class="product-bottom">
+
+                                        <div>
+
+                                            <span class="product-price">
+                                                $18.000
+                                            </span>
+
+                                            <span class="product-min">
+                                                Mínimo: 10 unidades
+                                            </span>
+
+                                        </div>
+
+                                        <button
+                                            class="add-cart-button"
+                                            type="button"
+                                            data-product="auriculares">
+
+                                            +
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- PRODUCTO 3 -->
+
+                            <article
+                                class="product-card"
+                                data-category="hogar"
+                                data-price="12500"
+                                data-name="Set de utensilios de cocina">
+
+                                <a
+                                    href="producto.html?id=utensilios"
+                                    class="product-image">
+
+                                    <div class="image-placeholder">
+                                        IMAGEN
+                                    </div>
+
+                                </a>
+
+
+                                <div class="product-info">
+
+                                    <span class="product-category">
+                                        Hogar y cocina
+                                    </span>
+
+                                    <h3 class="product-name">
+
+                                        <a href="producto.html?id=utensilios">
+                                            Set de utensilios de cocina
+                                        </a>
+
+                                    </h3>
+
+                                    <p class="product-description">
+                                        Set práctico de utensilios para cocina
+                                        y uso cotidiano.
+                                    </p>
+
+
+                                    <div class="product-bottom">
+
+                                        <div>
+
+                                            <span class="product-price">
+                                                $12.500
+                                            </span>
+
+                                            <span class="product-min">
+                                                Mínimo: 6 unidades
+                                            </span>
+
+                                        </div>
+
+                                        <button
+                                            class="add-cart-button"
+                                            type="button"
+                                            data-product="utensilios">
+
+                                            +
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- PRODUCTO 4 -->
+
+                            <article
+                                class="product-card"
+                                data-category="hogar"
+                                data-price="22000"
+                                data-name="Termo de acero inoxidable">
+
+                                <a
+                                    href="producto.html?id=termo"
+                                    class="product-image">
+
+                                    <div class="image-placeholder">
+                                        IMAGEN
+                                    </div>
+
+                                </a>
+
+
+                                <div class="product-info">
+
+                                    <span class="product-category">
+                                        Hogar y cocina
+                                    </span>
+
+                                    <h3 class="product-name">
+
+                                        <a href="producto.html?id=termo">
+                                            Termo de acero inoxidable
+                                        </a>
+
+                                    </h3>
+
+                                    <p class="product-description">
+                                        Termo resistente de acero inoxidable,
+                                        ideal para uso diario.
+                                    </p>
+
+
+                                    <div class="product-bottom">
+
+                                        <div>
+
+                                            <span class="product-price">
+                                                $22.000
+                                            </span>
+
+                                            <span class="product-min">
+                                                Mínimo: 6 unidades
+                                            </span>
+
+                                        </div>
+
+                                        <button
+                                            class="add-cart-button"
+                                            type="button"
+                                            data-product="termo">
+
+                                            +
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- PRODUCTO 5 -->
+
+                            <article
+                                class="product-card"
+                                data-category="limpieza"
+                                data-price="8500"
+                                data-name="Set de limpieza">
+
+                                <a
+                                    href="producto.html?id=set-limpieza"
+                                    class="product-image">
+
+                                    <div class="image-placeholder">
+                                        IMAGEN
+                                    </div>
+
+                                </a>
+
+
+                                <div class="product-info">
+
+                                    <span class="product-category">
+                                        Limpieza
+                                    </span>
+
+                                    <h3 class="product-name">
+
+                                        <a href="producto.html?id=set-limpieza">
+                                            Set de limpieza
+                                        </a>
+
+                                    </h3>
+
+                                    <p class="product-description">
+                                        Artículos esenciales para tareas
+                                        de limpieza del hogar.
+                                    </p>
+
+
+                                    <div class="product-bottom">
+
+                                        <div>
+
+                                            <span class="product-price">
+                                                $8.500
+                                            </span>
+
+                                            <span class="product-min">
+                                                Mínimo: 6 unidades
+                                            </span>
+
+                                        </div>
+
+                                        <button
+                                            class="add-cart-button"
+                                            type="button"
+                                            data-product="set-limpieza">
+
+                                            +
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- PRODUCTO 6 -->
+
+                            <article
+                                class="product-card"
+                                data-category="bazar"
+                                data-price="15000"
+                                data-name="Set de vasos">
+
+                                <a
+                                    href="producto.html?id=set-vasos"
+                                    class="product-image">
+
+                                    <div class="image-placeholder">
+                                        IMAGEN
+                                    </div>
+
+                                </a>
+
+
+                                <div class="product-info">
+
+                                    <span class="product-category">
+                                        Bazar
+                                    </span>
+
+                                    <h3 class="product-name">
+
+                                        <a href="producto.html?id=set-vasos">
+                                            Set de vasos
+                                        </a>
+
+                                    </h3>
+
+                                    <p class="product-description">
+                                        Set de vasos para uso doméstico,
+                                        gastronómico y comercial.
+                                    </p>
+
+
+                                    <div class="product-bottom">
+
+                                        <div>
+
+                                            <span class="product-price">
+                                                $15.000
+                                            </span>
+
+                                            <span class="product-min">
+                                                Mínimo: 6 unidades
+                                            </span>
+
+                                        </div>
+
+                                        <button
+                                            class="add-cart-button"
+                                            type="button"
+                                            data-product="set-vasos">
+
+                                            +
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- PRODUCTO 7 -->
+
+                            <article
+                                class="product-card"
+                                data-category="herramientas"
+                                data-price="32000"
+                                data-name="Set de herramientas">
+
+                                <a
+                                    href="producto.html?id=set-herramientas"
+                                    class="product-image">
+
+                                    <div class="image-placeholder">
+                                        IMAGEN
+                                    </div>
+
+                                </a>
+
+
+                                <div class="product-info">
+
+                                    <span class="product-category">
+                                        Herramientas
+                                    </span>
+
+                                    <h3 class="product-name">
+
+                                        <a href="producto.html?id=set-herramientas">
+                                            Set de herramientas
+                                        </a>
+
+                                    </h3>
+
+                                    <p class="product-description">
+                                        Kit de herramientas para tareas
+                                        domésticas y mantenimiento.
+                                    </p>
+
+
+                                    <div class="product-bottom">
+
+                                        <div>
+
+                                            <span class="product-price">
+                                                $32.000
+                                            </span>
+
+                                            <span class="product-min">
+                                                Mínimo: 1 unidad
+                                            </span>
+
+                                        </div>
+
+                                        <button
+                                            class="add-cart-button"
+                                            type="button"
+                                            data-product="set-herramientas">
+
+                                            +
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- PRODUCTO 8 -->
+
+                            <article
+                                class="product-card"
+                                data-category="electrodomesticos"
+                                data-price="68000"
+                                data-name="Pava eléctrica">
+
+                                <a
+                                    href="producto.html?id=pava-electrica"
+                                    class="product-image">
+
+                                    <div class="image-placeholder">
+                                        IMAGEN
+                                    </div>
+
+                                </a>
+
+
+                                <div class="product-info">
+
+                                    <span class="product-category">
+                                        Electrodomésticos
+                                    </span>
+
+                                    <h3 class="product-name">
+
+                                        <a href="producto.html?id=pava-electrica">
+                                            Pava eléctrica
+                                        </a>
+
+                                    </h3>
+
+                                    <p class="product-description">
+                                        Pava eléctrica de uso práctico para
+                                        hogares y comercios.
+                                    </p>
+
+
+                                    <div class="product-bottom">
+
+                                        <div>
+
+                                            <span class="product-price">
+                                                $68.000
+                                            </span>
+
+                                            <span class="product-min">
+                                                Mínimo: 1 unidad
+                                            </span>
+
+                                        </div>
+
+                                        <button
+                                            class="add-cart-button"
+                                            type="button"
+                                            data-product="pava-electrica">
+
+                                            +
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                        <!-- =========================
+                             SIN RESULTADOS
+                        ========================== -->
+
+                        <div
+                            class="no-products"
+                            id="no-products"
+                            hidden>
+
+                            <div class="no-products-icon">
+                                —
+                            </div>
+
+                            <h2>
+                                No encontramos productos
+                            </h2>
+
+                            <p>
+                                Probá modificando la búsqueda o los filtros.
+                            </p>
+
+                            <button
+                                class="clear-filters"
+                                type="button">
+
+                                Limpiar filtros
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHATSAPP CTA
+        ========================== -->
+
+        <section class="products-whatsapp">
+
+            <div class="container">
+
+                <div class="products-whatsapp-content">
+
+                    <div>
+
+                        <span class="section-tag">
+                            ¿TENÉS ALGUNA CONSULTA?
+                        </span>
+
+                        <h2>
+                            Estamos para ayudarte
+                        </h2>
+
+                        <p>
+                            Si necesitás información sobre cantidades,
+                            productos o pedidos mayoristas, escribinos.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="https://wa.me/5493455008512"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary">
+
+                        Consultar por WhatsApp
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- Marca -->
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo footer-logo">
+
+                        <span class="logo-main">
+                            ZEBRA
+                        </span>
+
+                        <span class="logo-sub">
+                            DISTRIBUIDORA
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Más de 10 años acompañando a nuestros clientes.
+                    </p>
+
+                </div>
+
+
+                <!-- Navegación -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Navegación
+                    </h3>
+
+                    <a href="index.html">
+                        Inicio
+                    </a>
+
+                    <a href="productos.html">
+                        Productos
+                    </a>
+
+                    <a href="index.html#nosotros">
+                        Nosotros
+                    </a>
+
+                    <a href="index.html#contacto">
+                        Contacto
+                    </a>
+
+                </div>
+
+
+                <!-- Categorías -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Categorías
+                    </h3>
+
+                    <a href="productos.html?categoria=electrodomesticos">
+                        Electrodomésticos
+                    </a>
+
+                    <a href="productos.html?categoria=hogar">
+                        Hogar y cocina
+                    </a>
+
+                    <a href="productos.html?categoria=tecnologia">
+                        Tecnología
+                    </a>
+
+                    <a href="productos.html?categoria=limpieza">
+                        Limpieza
+                    </a>
+
+                    <a href="productos.html?categoria=bazar">
+                        Bazar
+                    </a>
+
+                    <a href="productos.html?categoria=herramientas">
+                        Herramientas
+                    </a>
+
+                </div>
+
+
+                <!-- Contacto -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Contacto
+                    </h3>
+
+                    <p>
+                        Concordia, Entre Ríos
+                    </p>
+
+                    <a
+                        href="https://wa.me/5493455008512"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        +54 9 345 500-8512
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 ZEBRA DISTRIBUIDORA. Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         WHATSAPP FLOTANTE
+    ========================== -->
+
+    <a
+        href="https://wa.me/5493455008512"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp">
+
+        <span>WA</span>
+
+    </a>
+
+
+    <!-- =========================
+         JAVASCRIPT
+         Por ahora se deja preparado.
+    ========================== -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

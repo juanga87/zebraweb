@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Finalizar compra | ZEBRA DISTRIBUIDORA</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo/favicon.png">
+
+    <meta
+        name="description"
+        content="Finalizá tu compra en ZEBRA Distribuidora."
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-main">ZEBRA</span>
+                <span class="logo-sub">DISTRIBUIDORA</span>
+            </a>
+
+            <nav class="nav">
+
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="productos.html">Categorías</a>
+                <a href="index.html#nosotros">Nosotros</a>
+                <a href="index.html#contacto">Contacto</a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="search-button" type="button">
+                    <span>⌕</span>
+                </button>
+
+                <a
+                    href="https://wa.me/5493455008512"
+                    class="header-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp
+                </a>
+
+                <a href="carrito.html" class="cart-button">
+                    <span class="cart-icon">🛒</span>
+                    <span>Carrito</span>
+                    <span class="cart-count">3</span>
+                </a>
+
+                <button class="menu-button" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CHECKOUT
+    ========================== -->
+
+    <main>
+
+        <section class="checkout-header">
+
+            <div class="container">
+
+                <div class="section-tag">
+                    FINALIZAR COMPRA
+                </div>
+
+                <h1>
+                    Confirmá tu pedido
+                </h1>
+
+                <p>
+                    Completá tus datos y seleccioná el medio de pago
+                    para continuar con tu pedido.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="checkout-section">
+
+            <div class="container">
+
+                <div class="checkout-layout">
+
+
+                    <!-- =========================
+                         FORMULARIO
+                    ========================== -->
+
+                    <div class="checkout-form">
+
+                        <!-- DATOS PERSONALES -->
+
+                        <div class="checkout-card">
+
+                            <div class="checkout-card-header">
+
+                                <span class="checkout-step">
+                                    01
+                                </span>
+
+                                <div>
+                                    <h2>
+                                        Datos personales
+                                    </h2>
+
+                                    <p>
+                                        Información de contacto para tu pedido.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="nombre">
+                                        Nombre
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="nombre"
+                                        name="nombre"
+                                        placeholder="Tu nombre"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="apellido">
+                                        Apellido
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="apellido"
+                                        name="apellido"
+                                        placeholder="Tu apellido"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="email">
+                                        Email
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="nombre@email.com"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="telefono">
+                                        Teléfono
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="telefono"
+                                        name="telefono"
+                                        placeholder="+54 9..."
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DATOS DE ENTREGA -->
+
+                        <div class="checkout-card">
+
+                            <div class="checkout-card-header">
+
+                                <span class="checkout-step">
+                                    02
+                                </span>
+
+                                <div>
+                                    <h2>
+                                        Datos de entrega
+                                    </h2>
+
+                                    <p>
+                                        Indicá dónde querés recibir tu pedido.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-group form-group-full">
+
+                                    <label for="direccion">
+                                        Dirección
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="direccion"
+                                        name="direccion"
+                                        placeholder="Calle y número"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="ciudad">
+                                        Ciudad
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="ciudad"
+                                        name="ciudad"
+                                        placeholder="Ciudad"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="provincia">
+                                        Provincia
+                                    </label>
+
+                                    <select
+                                        id="provincia"
+                                        name="provincia"
+                                        required
+                                    >
+                                        <option value="">
+                                            Seleccioná una provincia
+                                        </option>
+
+                                        <option>
+                                            Buenos Aires
+                                        </option>
+
+                                        <option>
+                                            Catamarca
+                                        </option>
+
+                                        <option>
+                                            Chaco
+                                        </option>
+
+                                        <option>
+                                            Chubut
+                                        </option>
+
+                                        <option>
+                                            Ciudad Autónoma de Buenos Aires
+                                        </option>
+
+                                        <option>
+                                            Córdoba
+                                        </option>
+
+                                        <option>
+                                            Corrientes
+                                        </option>
+
+                                        <option>
+                                            Entre Ríos
+                                        </option>
+
+                                        <option>
+                                            Formosa
+                                        </option>
+
+                                        <option>
+                                            Jujuy
+                                        </option>
+
+                                        <option>
+                                            La Pampa
+                                        </option>
+
+                                        <option>
+                                            La Rioja
+                                        </option>
+
+                                        <option>
+                                            Mendoza
+                                        </option>
+
+                                        <option>
+                                            Misiones
+                                        </option>
+
+                                        <option>
+                                            Neuquén
+                                        </option>
+
+                                        <option>
+                                            Río Negro
+                                        </option>
+
+                                        <option>
+                                            Salta
+                                        </option>
+
+                                        <option>
+                                            San Juan
+                                        </option>
+
+                                        <option>
+                                            San Luis
+                                        </option>
+
+                                        <option>
+                                            Santa Cruz
+                                        </option>
+
+                                        <option>
+                                            Santa Fe
+                                        </option>
+
+                                        <option>
+                                            Santiago del Estero
+                                        </option>
+
+                                        <option>
+                                            Tierra del Fuego
+                                        </option>
+
+                                        <option>
+                                            Tucumán
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="codigo-postal">
+                                        Código postal
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="codigo-postal"
+                                        name="codigo-postal"
+                                        placeholder="Ej. 3200"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- MÉTODO DE PAGO -->
+
+                        <div class="checkout-card">
+
+                            <div class="checkout-card-header">
+
+                                <span class="checkout-step">
+                                    03
+                                </span>
+
+                                <div>
+                                    <h2>
+                                        Medio de pago
+                                    </h2>
+
+                                    <p>
+                                        Seleccioná una opción para esta compra de demostración.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="payment-options">
+
+
+                                <label class="payment-option">
+
+                                    <input
+                                        type="radio"
+                                        name="pago"
+                                        value="mercado-pago"
+                                        checked
+                                    >
+
+                                    <span class="payment-radio"></span>
+
+                                    <span class="payment-icon">
+                                        MP
+                                    </span>
+
+                                    <span class="payment-info">
+
+                                        <strong>
+                                            Mercado Pago
+                                        </strong>
+
+                                        <small>
+                                            Pago mediante Mercado Pago.
+                                        </small>
+
+                                    </span>
+
+                                </label>
+
+
+                                <label class="payment-option">
+
+                                    <input
+                                        type="radio"
+                                        name="pago"
+                                        value="tarjeta"
+                                    >
+
+                                    <span class="payment-radio"></span>
+
+                                    <span class="payment-icon">
+                                        $
+                                    </span>
+
+                                    <span class="payment-info">
+
+                                        <strong>
+                                            Tarjeta de crédito o débito
+                                        </strong>
+
+                                        <small>
+                                            Simulación de pago con tarjeta.
+                                        </small>
+
+                                    </span>
+
+                                </label>
+
+
+                                <label class="payment-option">
+
+                                    <input
+                                        type="radio"
+                                        name="pago"
+                                        value="transferencia"
+                                    >
+
+                                    <span class="payment-radio"></span>
+
+                                    <span class="payment-icon">
+                                        $
+                                    </span>
+
+                                    <span class="payment-info">
+
+                                        <strong>
+                                            Transferencia bancaria
+                                        </strong>
+
+                                        <small>
+                                            Datos de transferencia simulados.
+                                        </small>
+
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+
+                            <div class="demo-payment-notice">
+
+                                <span class="demo-payment-icon">
+                                    i
+                                </span>
+
+                                <p>
+                                    Este sitio es una demostración.
+                                    No se realizarán pagos ni transacciones reales.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- OBSERVACIONES -->
+
+                        <div class="checkout-card">
+
+                            <div class="checkout-card-header">
+
+                                <span class="checkout-step">
+                                    04
+                                </span>
+
+                                <div>
+                                    <h2>
+                                        Observaciones
+                                    </h2>
+
+                                    <p>
+                                        Información adicional sobre tu pedido.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="observaciones">
+                                    Comentario
+                                </label>
+
+                                <textarea
+                                    id="observaciones"
+                                    name="observaciones"
+                                    rows="5"
+                                    placeholder="¿Querés agregar alguna indicación?"
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         RESUMEN DEL PEDIDO
+                    ========================== -->
+
+                    <aside class="checkout-summary">
+
+                        <div class="checkout-summary-inner">
+
+                            <div class="checkout-summary-header">
+
+                                <span class="section-tag">
+                                    TU PEDIDO
+                                </span>
+
+                                <h2>
+                                    Resumen
+                                </h2>
+
+                            </div>
+
+
+                            <div class="checkout-products">
+
+                                <div class="checkout-product">
+
+                                    <div class="checkout-product-image">
+                                        <span>IMG</span>
+                                    </div>
+
+                                    <div class="checkout-product-info">
+
+                                        <strong>
+                                            Licuadora de vaso
+                                        </strong>
+
+                                        <span>
+                                            1 unidad
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        $45.000
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="checkout-product">
+
+                                    <div class="checkout-product-image">
+                                        <span>IMG</span>
+                                    </div>
+
+                                    <div class="checkout-product-info">
+
+                                        <strong>
+                                            Auriculares Bluetooth
+                                        </strong>
+
+                                        <span>
+                                            10 unidades
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        $180.000
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="checkout-product">
+
+                                    <div class="checkout-product-image">
+                                        <span>IMG</span>
+                                    </div>
+
+                                    <div class="checkout-product-info">
+
+                                        <strong>
+                                            Set de utensilios
+                                        </strong>
+
+                                        <span>
+                                            6 unidades
+                                        </span>
+
+                                    </div>
+
+                                    <strong>
+                                        $75.000
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="checkout-summary-lines">
+
+                                <div>
+                                    <span>
+                                        Productos
+                                    </span>
+
+                                    <strong>
+                                        $300.000
+                                    </strong>
+                                </div>
+
+                                <div>
+                                    <span>
+                                        Envío
+                                    </span>
+
+                                    <span>
+                                        A coordinar
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="checkout-total">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <strong>
+                                    $300.000
+                                </strong>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary checkout-submit"
+                            >
+                                Confirmar pedido
+                                <span>→</span>
+                            </button>
+
+
+                            <p class="checkout-terms">
+                                Al confirmar el pedido aceptás que esta compra
+                                forma parte de una demostración del sitio.
+                            </p>
+
+
+                            <a
+                                href="carrito.html"
+                                class="checkout-back"
+                            >
+                                ← Volver al carrito
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-main">ZEBRA</span>
+                        <span class="logo-sub">DISTRIBUIDORA</span>
+                    </a>
+
+                    <p>
+                        Distribuidora mayorista en Concordia,
+                        Entre Ríos.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Navegación
+                    </h3>
+
+                    <a href="index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="productos.html">Categorías</a>
+                    <a href="index.html#nosotros">Nosotros</a>
+                    <a href="index.html#contacto">Contacto</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Categorías
+                    </h3>
+
+                    <a href="productos.html?categoria=electrodomesticos">
+                        Electrodomésticos
+                    </a>
+
+                    <a href="productos.html?categoria=hogar">
+                        Hogar y cocina
+                    </a>
+
+                    <a href="productos.html?categoria=tecnologia">
+                        Tecnología
+                    </a>
+
+                    <a href="productos.html?categoria=limpieza">
+                        Limpieza
+                    </a>
+
+                    <a href="productos.html?categoria=bazar">
+                        Bazar
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Contacto
+                    </h3>
+
+                    <span>
+                        Concordia, Entre Ríos
+                    </span>
+
+                    <a href="https://wa.me/5493455008512">
+                        +54 9 345 500-8512
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 ZEBRA DISTRIBUIDORA
+                </span>
+
+                <span>
+                    Todos los derechos reservados.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         WHATSAPP FLOTANTE
+    ========================== -->
+
+    <a
+        href="https://wa.me/5493455008512"
+        class="floating-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+    >
+        <span>WA</span>
+    </a>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
