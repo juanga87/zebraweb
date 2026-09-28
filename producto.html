@@ -12,7 +12,7 @@
         content="Conocé todos los detalles de nuestros productos en ZEBRA DISTRIBUIDORA.">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo/favicon.png" type="image/png">
+    <link rel="icon" href="img/logo_page.png" type="image/png">
 </head>
 
 <body>
@@ -36,12 +36,12 @@
                     Inicio
                 </a>
 
-                <a href="productos.html" class="nav-link active">
-                    Productos
+                <a href="index.html#categorias" class="nav-link">
+                    Categorías
                 </a>
 
-                <a href="productos.html" class="nav-link">
-                    Categorías
+                <a href="productos.html" class="nav-link active">
+                    Productos
                 </a>
 
                 <a href="index.html#nosotros" class="nav-link">
@@ -54,50 +54,34 @@
 
             </nav>
 
+            <!-- Acciones del header -->
             <div class="header-actions">
 
-                <button
-                    class="search-button"
-                    type="button"
-                    aria-label="Buscar productos">
-
+                <!-- Buscador -->
+                <button class="header-action search-button" aria-label="Buscar">
                     <span>⌕</span>
-
                 </button>
 
+
+                <!-- Carrito -->
                 <a
-                    href="https://wa.me/5493455008512"
-                    class="header-whatsapp"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    WhatsApp
-
+                    href="carrito.html"
+                    class="header-action cart-button"
+                    aria-label="Carrito"
+                >
+                    <span>🛒</span>
+                    <span class="cart-count">0</span>
                 </a>
 
-                <a href="carrito.html" class="cart-button">
-
-                    <span class="cart-icon">
-                        🛒
-                    </span>
-
-                    <span class="cart-text">
-                        Carrito
-                    </span>
-
-                    <span class="cart-count">
-                        0
-                    </span>
-
-                </a>
-
+                <!-- Menú mobile -->
                 <button
-                    class="menu-toggle"
-                    type="button"
-                    aria-label="Abrir menú">
-
-                    ☰
-
+                    class="menu-button"
+                    aria-label="Abrir menú"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
 
             </div>

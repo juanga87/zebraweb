@@ -7,7 +7,7 @@
     <title>Carrito | ZEBRA DISTRIBUIDORA</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo/favicon.png">
+    <link rel="icon" href="img/logo_page.png" type="image/png">
 
     <meta
         name="description"
@@ -30,42 +30,54 @@
                 <span class="logo-sub">DISTRIBUIDORA</span>
             </a>
 
-            <nav class="nav">
+            <nav class="nav" aria-label="Navegación principal">
 
-                <a href="index.html">Inicio</a>
+                <a href="index.html" class="nav-link">
+                    Inicio
+                </a>
 
-                <a href="productos.html">Productos</a>
+                <a href="#categorias" class="nav-link">
+                    Categorías
+                </a>
 
-                <a href="productos.html">Categorías</a>
+                <a href="productos.html" class="nav-link">
+                    Productos
+                </a>
 
-                <a href="index.html#nosotros">Nosotros</a>
+                <a href="#nosotros" class="nav-link">
+                    Nosotros
+                </a>
 
-                <a href="index.html#contacto">Contacto</a>
+                <a href="#contacto" class="nav-link">
+                    Contacto
+                </a>
 
             </nav>
 
             <div class="header-actions">
 
-                <button class="search-button" type="button">
+                 <!-- Buscador -->
+                <button class="header-action search-button" aria-label="Buscar">
                     <span>⌕</span>
                 </button>
 
-                <a
-                    href="https://wa.me/5493455008512"
-                    class="header-whatsapp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    WhatsApp
-                </a>
 
-                <a href="carrito.html" class="cart-button active">
-                    <span class="cart-icon">🛒</span>
-                    <span>Carrito</span>
+                <!-- Carrito -->
+                <a
+                    href="carrito.html"
+                    class="header-action cart-button"
+                    aria-label="Carrito"
+                >
+                    <span>🛒</span>
                     <span class="cart-count">0</span>
                 </a>
 
-                <button class="menu-button" type="button">
+                <!-- Menú mobile -->
+                <button
+                    class="menu-button"
+                    aria-label="Abrir menú"
+                    aria-expanded="false"
+                >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -544,44 +556,37 @@
         </section>
 
 
-        <!-- =========================
-             WHATSAPP CTA
+         <!-- =========================
+             CTA
         ========================== -->
 
-        <section class="whatsapp-cta">
+        <section class="cta">
 
-            <div class="container">
+            <div class="container cta-container">
 
-                <div class="whatsapp-cta-content">
+                <div>
+                    <span class="section-tag">
+                        ¿TENÉS ALGUNA CONSULTA?
+                    </span>
 
-                    <div>
+                    <h2>
+                        Estamos para ayudarte
+                    </h2>
 
-                        <span class="section-tag">
-                            ¿NECESITÁS AYUDA?
-                        </span>
-
-                        <h2>
-                            Estamos para ayudarte con tu pedido.
-                        </h2>
-
-                        <p>
-                            Consultanos por disponibilidad, cantidades
-                            o cualquier otro producto.
-                        </p>
-
-                    </div>
-
-                    <a
-                        href="https://wa.me/5493455008512"
-                        class="btn btn-whatsapp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Consultar por WhatsApp
-                        <span>↗</span>
-                    </a>
-
+                    <p>
+                        Consultanos por productos, cantidades,
+                        precios mayoristas o disponibilidad.
+                    </p>
                 </div>
+
+                <a
+                    href="https://wa.me/5493455008512?text=Hola%20Zebra%2C%20quiero%20hacer%20una%20consulta."
+                    class="button button-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Contactar por WhatsApp
+                </a>
 
             </div>
 

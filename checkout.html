@@ -7,7 +7,7 @@
     <title>Finalizar compra | ZEBRA DISTRIBUIDORA</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo/favicon.png">
+    <link rel="icon" href="img/logo_page.png" type="image/png">
 
     <meta
         name="description"
@@ -30,38 +30,54 @@
                 <span class="logo-sub">DISTRIBUIDORA</span>
             </a>
 
-            <nav class="nav">
+            <nav class="nav" aria-label="Navegación principal">
 
-                <a href="index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="productos.html">Categorías</a>
-                <a href="index.html#nosotros">Nosotros</a>
-                <a href="index.html#contacto">Contacto</a>
+                <a href="index.html" class="nav-link">
+                    Inicio
+                </a>
+
+                <a href="#categorias" class="nav-link">
+                    Categorías
+                </a>
+
+                <a href="productos.html" class="nav-link">
+                    Productos
+                </a>
+
+                <a href="#nosotros" class="nav-link">
+                    Nosotros
+                </a>
+
+                <a href="#contacto" class="nav-link">
+                    Contacto
+                </a>
 
             </nav>
 
             <div class="header-actions">
 
-                <button class="search-button" type="button">
+                 <!-- Buscador -->
+                <button class="header-action search-button" aria-label="Buscar">
                     <span>⌕</span>
                 </button>
 
+
+                <!-- Carrito -->
                 <a
-                    href="https://wa.me/5493455008512"
-                    class="header-whatsapp"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="carrito.html"
+                    class="header-action cart-button"
+                    aria-label="Carrito"
                 >
-                    WhatsApp
+                    <span>🛒</span>
+                    <span class="cart-count">0</span>
                 </a>
 
-                <a href="carrito.html" class="cart-button">
-                    <span class="cart-icon">🛒</span>
-                    <span>Carrito</span>
-                    <span class="cart-count">3</span>
-                </a>
-
-                <button class="menu-button" type="button">
+                <!-- Menú mobile -->
+                <button
+                    class="menu-button"
+                    aria-label="Abrir menú"
+                    aria-expanded="false"
+                >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -83,10 +99,6 @@
         <section class="checkout-header">
 
             <div class="container">
-
-                <div class="section-tag">
-                    FINALIZAR COMPRA
-                </div>
 
                 <h1>
                     Confirmá tu pedido
@@ -130,9 +142,7 @@
                                         Datos personales
                                     </h2>
 
-                                    <p>
-                                        Información de contacto para tu pedido.
-                                    </p>
+                                    
                                 </div>
 
                             </div>
@@ -227,9 +237,6 @@
                                         Datos de entrega
                                     </h2>
 
-                                    <p>
-                                        Indicá dónde querés recibir tu pedido.
-                                    </p>
                                 </div>
 
                             </div>
@@ -423,9 +430,6 @@
                                         Medio de pago
                                     </h2>
 
-                                    <p>
-                                        Seleccioná una opción para esta compra de demostración.
-                                    </p>
                                 </div>
 
                             </div>
@@ -556,7 +560,7 @@
                                     </h2>
 
                                     <p>
-                                        Información adicional sobre tu pedido.
+                                        Brinda información adicional opcional sobre tu pedido.
                                     </p>
 
                                 </div>
@@ -722,18 +726,16 @@
                             </div>
 
 
-                            <button
-                                type="submit"
+                            <a
+                                href="confirmacion.html"
                                 class="btn btn-primary checkout-submit"
                             >
-                                Confirmar pedido
-                                <span>→</span>
-                            </button>
+                                Confirmar pedido <span>→</span> 
+                            </a>
 
 
-                            <p class="checkout-terms">
-                                Al confirmar el pedido aceptás que esta compra
-                                forma parte de una demostración del sitio.
+                            <p>
+                                ­
                             </p>
 
 
